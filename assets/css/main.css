@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+
+
+
 nav li, nav li:hover, .card-item, .card-item:hover, .card-item img, .card-item a:hover img {
     transition: 0.5s;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -28,35 +31,82 @@ nav {
 }
 
 .container2 {
-    width: 96%;
+    width: 70%;
     margin: 0 auto; /* horizontal center */
    
    
 }
 
+.bottom {
+    width: 28rem;
+    margin-right:5rem;
+}
+
+.title {
+    /*display:inline-block;*/
+    width: 20rem;
+    margin-left:0rem;
+
+}
+
+.title .word{
+    letter-spacing:1px;
+    word-spacing:90px;
+
+}
+
 .logo {
+    /*display:inline-block;*/
     width: 2rem;
-    margin-left:10rem;
+    margin-left:0rem;
 }
 
 nav li {
     list-style: none;
     padding: 0  2rem;
     line-height: 1rem;
-    padding-top:2rem;
+    padding-top:1rem;
 }
 
 nav li:hover {
     background-color: #e6e6e6;
 }
+.success{
+    width:25rem;
 
-.ml{
-    margin-left:8rem;
+
+}
+.m2{
+    position:absolute;  /*跟外層距離 ml 裡面*/
+    bottom:4rem;
+    z-index:2;
+}
+.m3{
+    position:absolute;  /*跟外層距離 ml 裡面*/
+    right:20rem;
+    bottom:1rem;
+    width:60rem;
+    z-index:2;
+}
+.m4{
+    position:absolute;  /*跟外層距離 ml 裡面*/
+    width:50rem;
+    right:15rem;
+    bottom:0.5rem;
+    z-index:2;
+}
+.all{
+    height:100vh;
+    margin-left:5rem;
     text-align:left;
+    padding-top:33.5rem;
 }
-.mr{
-    margin-bottom:5rem;
+.mb{
+    position:absolute; 
+     z-index:5;
+
 }
+
 .column {
   float: left;
   padding: 10px;
@@ -76,10 +126,10 @@ nav li:hover {
  */
 
 header {
-    background-image: url(../../assets/media/Black-Panther_03.jpg);/*..為上一頁*/
+    background-image: url(../../assets/media/background.jpg);/*..為上一頁*/
     background-size: cover;
     background-position: center center;
-    padding: 8rem 0;
+    padding: 12rem 0rem;
     color: #fff;
     text-align: center;
 }

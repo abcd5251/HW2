@@ -5,18 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HW1</title>
+    <title>HW2</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css" rel="stylesheet" type="text/css"> 
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
     <nav>
         <div class="container2 flex-between">
-            <div class="logo">
-                   <h3 class="word">Avengers</h3>
+            <div class="title">
+                   <h3 class="word">Abouts Works</h3>
+                
             </div>
-            <ul class="flex-between" id ="topMenu">
+            <!--<div class="logo">
+                <h3 class="word">Works</h3>
+            </div>-->
+            <ul class="flex-between" id ="topMenu"> 
                 <li><p class="word">Story</p></li>
                 <li><p class="word">Charcters</p></li>
                 <li><p class="word">Gallery</p></li>
@@ -29,32 +34,33 @@
         </div>
     </nav>
     <header id="home">
-        <div class="row">
-            <div class="container2 col-6">
-                <div class="ml">
-                    <h1 class="title">Black</h1>
-                    <h1 class="title">Panther</h1>
-                        <div class="intro mtb-4">
-                            <p class="mb-4">HEHEHEHE</p>
-                            <p class="mb-4">HEHEHEHEDFDF</p>
-                            <p class="mb-4">HEHEHEHDSFFFSFSFSE</p>
-                            <p class="btn-intro">More</p>
-                            </div>
-              
-                </div>
-            </div>
-            <div class="col-5">
         
+           <div class="row">
+                <div class="col-6">
+                   
+                 
+                            </div>
+      
+              
+       
+            
+            <div class="col-6">
+                <div class="all">
+                    <div class="mb">
+                <img src="assets/media/bottom.png" class="bottom"  onclick="bottomclick()"/>
+                        </div>
+                    <div class="m2 transition hidden" >
+                <img src="assets/media/success.png" class="success" />
+               </div>
+                    <div class="m3 transition hidden">
+                        <img src="assets/media/smart.png"  />
+                    </div>
+                    <div class="m4 transition hidden">
+                        <img src="assets/media/likehate.jpg" />
+                    </div>
             </div>
-            <div class="col-1">
-               
-                <p class="word mr">01</p>
-                <p class="word mr">02</p>
-                <p class="word mr">03</p> 
-         
-            </div>
-        </div>
-
+       </div>
+               </div>
 
     </header>
    
@@ -67,7 +73,28 @@
                 x.className = "flex-between";
             }
         }
+        var n = 100;
+        var count = 0;
+        function bottomclick() {
+            if (count % 2 == 0) { n = Math.floor(Math.random() * 3); }
+            if (n==1){
+                $('.m2').transition('fade up');
+                count++;
+            }
+            else if (n == 2) {
+                $('.m3').transition('fade up');
+                count++;
+            }
+            else {
+                $('.m4').transition('fade up');
+                count++;}
+            
+        }
+       
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
 </body>
 
 </html>
